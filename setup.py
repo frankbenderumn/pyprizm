@@ -1,8 +1,9 @@
+import os
 from setuptools import setup, find_packages
 
 setup(
-    name='prizm',
-    version='0.1.0',
+    name="pyprizm",
+    version="0.0.1",
     author='Frank Bender',
     author_email='bende263@umn.edu',
     description='A simple helper package to assist with debugging',
@@ -16,5 +17,4 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.10',  # Specify Python version requirements
-    install_requires=[],
 )

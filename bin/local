@@ -1,0 +1,17 @@
+#!/bin/bash
+source config/settings
+
+LOCAL_WHEEL_DIR="../local_wheels"
+
+mkdir -p ${LOCAL_WHEEL_DIR}
+
+rm -rf build/
+rm -rf dist/
+
+python3 setup.py sdist bdist_wheel
+
+BASENAME=${PKG_NAME}-${PKG_VERSION}-py3-none-any.whl
+
+mv ./dist/${BASENAME} ${LOCAL_WHEEL_DIR}/${BASENAME}
+
+pip install ${LOCAL_WHEEL_DIR}/${BASENAME}

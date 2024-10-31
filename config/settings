@@ -1,0 +1,3 @@
+#!/bin/bash
+export PKG_NAME="pyprizm"
+export PKG_VERSION="0.1.1"

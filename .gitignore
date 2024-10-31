@@ -1,1 +1,6 @@
 log/
+build/
+dist/
+token
+venv/
+*.egg-info
